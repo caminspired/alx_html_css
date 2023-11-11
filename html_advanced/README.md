@@ -2,7 +2,7 @@
 
 # INTRODUCTION/OVERVIEW
 
-In this project, we will attempt to create the basic structure of a webpage using HTML only, without any CSS. having learnt in the past weeks, the basic structure of HTML websites, and what it means to create a head, and body, we will now present what we have learnt in a full website format, to prove that we have understood the concepts taught and shared in the previou slearning sessions.
+In this project, we will attempt to create the basic structure of a webpage using HTML only, without any CSS. Having learnt in the past weeks, the basic structure of HTML websites, and what it means to create a head and body, we will now present what we have learnt in a full website format, to prove that we have understood the concepts taught and shared in the previous learning sessions.
 
 # LEARNING OBJECTIVES
 
@@ -39,3 +39,4 @@ I hope this has been an insightful README and you have all the information neede
 - [Learn to Code HTML & CSS (until “Creating Lists” included)](https://learn.shayhowe.com/html-css/)
 - [Introduction to HTML](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML)
 - [MDN](https://developer.mozilla.org/en-US/)
+- For the Figma design, see your project int he intranet. As it is ALX property, we cannot share it to the public.
