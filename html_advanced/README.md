@@ -39,4 +39,4 @@ I hope this has been an insightful README and you have all the information neede
 - [Learn to Code HTML & CSS (until “Creating Lists” included)](https://learn.shayhowe.com/html-css/)
 - [Introduction to HTML](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML)
 - [MDN](https://developer.mozilla.org/en-US/)
-  - [Figma Design - Download design image here](https://intranet.alxswe.com/rltoken/LTAnuL7o_w6kq8u9hUicgg)
+- [Figma Design - Download design image here](https://intranet.alxswe.com/rltoken/LTAnuL7o_w6kq8u9hUicgg)
