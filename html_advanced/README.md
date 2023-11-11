@@ -40,3 +40,4 @@ I hope this has been an insightful README and you have all the information neede
 - [Introduction to HTML](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML)
 - [MDN](https://developer.mozilla.org/en-US/)
 - For the Figma design, see your project int he intranet. As it is ALX property, we cannot share it to the public.
+  [Figma Design - Download design image here](https://intranet.alxswe.com/rltoken/LTAnuL7o_w6kq8u9hUicgg)
