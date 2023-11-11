@@ -32,7 +32,10 @@ Once this is complete, we will need to show that we are ready for review by sele
 
 # CONCLUSION
 
-<p>I hope this has been an insightful README and you have all the information needed to navigative this directory. If not, let me know in the comments and I will make the necessary modifications. Do not forget to check out the resources referenced below.</p>
+I hope this has been an insightful README and you have all the information needed to navigative this directory. If not, let me know in the comments and I will make the necessary modifications. Do not forget to check out the resources referenced below.
 
-RESOURCES
-tbc...
+# RESOURCES
+
+- [Learn to Code HTML & CSS (until “Creating Lists” included)](https://learn.shayhowe.com/html-css/)
+- [Introduction to HTML](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML)
+- [MDN](https://developer.mozilla.org/en-US/)
