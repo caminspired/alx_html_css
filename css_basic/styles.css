@@ -35,16 +35,3 @@ h3, h4 {
 }
 p {
     color: #6a5f69
-}
-.table {
-    border-collapse: collapse;
-    width: 100%;
-}
-.table th, .table td {
-    border: 1px solid grey;
-    text-align: center;
-    padding: 10px;
-}
-.table th {
-    font-weight: bold;
-}
