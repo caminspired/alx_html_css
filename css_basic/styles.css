@@ -36,8 +36,8 @@ h3, h4 {
 p {
     color: #6a5f69
 }
-footer {
+.footer {
     display: flex;
     width: 100%;
-    border: 1px dash grey;
+    border: 1px solid grey;
 }
