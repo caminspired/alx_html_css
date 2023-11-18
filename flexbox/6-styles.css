@@ -245,7 +245,7 @@
     width: 100%;
   }
 
-  .nav .nav .nav-item + .nav-item {
+  .nav .nav-item + .nav-item {
     margin: var(--nav-item-margin);
   }
   
