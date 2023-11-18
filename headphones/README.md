@@ -8,7 +8,7 @@ In this project, we are to implement a webpage from scratch without the use of a
 
 The objective of this project, is to have a fully functional web page, with very little instructions, that looks like the images below, in the various client formats.
 
-![Desktop/Tablet/Mobile Views](<desktop view-1.jpg>)
+![Alt text](<webpage views-1.jpg>)
 
 # TASKS
 
