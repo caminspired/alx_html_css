@@ -13,6 +13,7 @@ main {
     display: flex;
     flex-direction: row;
     flex: auto;
+    border: 1px solid grey;
 }
 article {
     flex: 2;
@@ -38,6 +39,5 @@ p {
 }
 footer {
     display: flex;
-    width: 100%;
     border: 1px solid grey;
 }
