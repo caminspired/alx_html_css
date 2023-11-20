@@ -18,27 +18,9 @@
    * {
       box-sizing: border-box;
       line-height: 26px;
+      font-family: "Source Sans Pro" , sans-serif;
       
-   }
 
-@font-face {
-   font-family: "SourceSansPro";
-   src:
-      local("SourceSansPro"),
-      url("fonts/source-sans-pro/SourceSansPro-Black.otf") format("opentype") tech(color-COLRv1),
-      url("fonts/source-sans-pro/SourceSansPro-BlackIt.otf") format("opentype"),
-      url("fonts/source-sans-pro/SourceSansPro-Bold.otf") format("opentype"),
-      url("fonts/source-sans-pro/SourceSansPro-BoldIt.otf") format("opentype"),
-      url("fonts/source-sans-pro/SourceSansPro-ExtraLight.otf") format("opentype"),
-      url("fonts/source-sans-pro/SourceSansPro-ExtraLightIt.otf") format("opentype"),
-      url("fonts/source-sans-pro/SourceSansPro-It.otf") format("opentype"),
-      url("fonts/source-sans-pro/SourceSansPro-Light.otf") format("opentype"),
-      url("fonts/source-sans-pro/SourceSansPro-LightIt.otf") format("opentype"),
-      url("fonts/source-sans-pro/SourceSansPro-Regular.otf") format("opentype"),
-      url("fonts/source-sans-pro/SourceSansPro-Semibold.otf") format("opentype"),
-      url("fonts/source-sans-pro/SourceSansPro-SemiboldIt.otf") format("opentype"),    
-      
-    }
    
    .body {
       display: flex;
@@ -56,7 +38,7 @@
     color: #ffffff;
     height: 800px;
     justify-content: space-between;
-    align-items: space-between;
+    align-content: space-between;
    }
 
    .home-head {
@@ -80,12 +62,12 @@
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
-      border: 1px solid red;
       width:1000px;
       height: 32px;
       margin-left: 200px;
       color: #ffffff;
       margin-top: 28px;
+      flex-wrap: wrap;
    }
   
    .home {
@@ -108,7 +90,6 @@
       height: 15px;
       justify-content: space-between;
       align-items: center;
-      border: 1px solid blue;
    }
 
    .nav-link {
@@ -117,10 +98,15 @@
 
    }
 
-   .logo {
+   .logo-container {
     width: 161px;
     height: 32px;
-    border: 1px solid blue;
+    overflow: hidden;
+   }
+
+   .logo-container img {
+      width: 100%;
+      height: auto;
    }
 
    .button {
@@ -170,15 +156,12 @@
    .results {
       display: flex;
       flex-direction: column;
-      flex-wrap: wrap;
       background-image: url(images/headphones_hero_2.jpg);
       width: auto;
       color: #ffffff;
       height: 650px;
       justify-content: center;
       margin-top: 110px;
-      
-      z-index: -1;
       margin-top: 110px;
    }
 
@@ -210,16 +193,24 @@
       background-image: url(images/pentagone.png);
       background-size: contain;
       background-repeat: no-repeat;
-      width: 180px;
+      width: 190px;
       color: #ffffff;
-      height: 175px;
-      justify-content: center;
+      height: 190px;
+      justify-items: center;
       align-items: center;
       border: none;
    }
 
-   .percentage {
-      size: 46px;
+   .rating .rate-box h2 {
+      font-size: 46px;
+      margin-top:70px;
+      margin-left: 51px;
+   }
+
+   .rating .rate-box p {
+      margin-top:116px;
+      margin-left: 11px;
+      
    }
 
  
@@ -230,10 +221,15 @@
       justify-content: space-between;
       align-items: center;
       margin-top: 110px;
-      margin-left: 532px;
+      margin-left: 533px;
       width: 335px;
       height: 373px; 
       border: 1px solid blue;
+      
+   }
+
+   .contact-us h1 {
+      border: 1px solid green;
    }
 
    .input {
@@ -244,6 +240,7 @@
       outline: none;
       border: none;
       font-weight: bold;
+      
    }
 
    .footer {
@@ -274,7 +271,7 @@
    .social {
       width: 30px;
       height: 30px;
-      border: 1px solid blue; 
+
       
    }
 
