@@ -45,3 +45,4 @@ I hope this has been an insightful README and you have all the information neede
 - [Specifics on CSS Specificity](https://intranet.alxswe.com/rltoken/iKcCQWmdyLJ1lgzUTn1vEA)
 - [CSS SpeciFishity](https://intranet.alxswe.com/rltoken/0CjKVVB8JI34peIvhR4wig)
 - [CSS](https://intranet.alxswe.com/rltoken/7m7YhEqVCD3TRKlslinimg)
+- [Figma Design - Download design image here](https://intranet.alxswe.com/rltoken/LTAnuL7o_w6kq8u9hUicgg)
