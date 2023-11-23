@@ -190,7 +190,6 @@
 .tutorial-videos {
     display: flex;
     gap: 30px;
-    justify-content: space-between;
 }
 
 .tutorial-videos-box {
