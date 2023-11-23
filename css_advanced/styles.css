@@ -10,8 +10,8 @@
     position: none;
     offset: none;
     text-indent: none; 
-    line-height: 1.5;
-    border: 1px solid yellow;;     
+    line-height: 1.5;  
+    background-repeat: no-repeat; 
  }
       
 .body {
@@ -26,9 +26,9 @@
     align-items: center;
     justify-content: space-between;
     background-image: url(images/Object.png);
+    background-size: cover;
     width: 1440px;
     height: 1093px;
-    background-repeat: none;
     color: #ffffff;
  }
 
@@ -69,13 +69,15 @@
     width: 684px;
     height: 243px;
     justify-content: space-between;
-    margin: auto;auto; 
-    border: 1px solid green;
+    margin: auto;
+    border: 1px solid green; 
+    white-space: nowrap;
 }
 
 .get-schooled h1 {
     font-size: 120px;
-    font-weight: 700;
+    font-weight: 700; 
+    
 }
 
 .get-schooled p {
@@ -105,7 +107,6 @@
     justify-content: space-between;
     width: 1009px;
     height: 364px;
-    border: 1px solid green;
     margin-bottom: 98px;
     text-align: center;
 }
@@ -122,6 +123,7 @@
     width: 150px;
     height: 237px;
     align-items: center;
+    border: none;
 }
 
 .pro-box h3 {
@@ -143,12 +145,10 @@
     background-color: #C271FF;
     width: 1440px;
     height: 392px;
-    border: 1px solid #fff;
 }
 
 .author {
     display: flex;
-    border: 1px solid #fff;
     width: 943px;
     height: 160px;
     justify-content: space-between;
@@ -161,9 +161,9 @@
     justify-content: space-between;
     width: 730px;
     height: 160px;
-    border:  1px solid green;
     font-size: 22px;  
     text-align: left;
+    border: none;
 }
 
 .author-quote .name {
@@ -177,11 +177,38 @@
 
 .tutorial {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
     width: 1228px;
     height: 450px;
     margin-left: 107px;
     margin-top: 87px;
     border: 1px solid green;
+}
+
+.tutorial-videos {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+.tutorial-videos-box {
+    display: flex;
+    flex-direction: column;
+    width: 255px;
+    height: 335px;
+    justify-content: space-between;
+}
+
+.phillip-massey {
+    display: flex;
+    width: 129px;
+    height: 30px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #C271FF;
+    justify-content: space-between;
 }
 
 .membership {
@@ -208,11 +235,69 @@
     margin-left: 249px;
 }
 
+.faq h1 {
+    font-size: 60px;   
+}
+
+.faq-sec {
+    display: flex;
+    width: 920px;
+    height: 242px;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+}
+
+.faq-sec-para {
+    width: 350px;
+    height: 242px;
+    font-size: 14px;
+    color: #071629;
+}
+
+.faq-sec-para h2 {
+    font-size: 16px;
+}
+
 .footer {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     width: 1440px;
     height: 249px;
     background-color: #071629;
     margin-top: 84px;;
 }
+
+.footer-logo-social {
+    display: flex;
+    justify-content: space-between;
+    width: 1035px;
+    height: 30px;
+    margin-top: 95px;
+ }
+
+ .footer-social {
+    display: flex;
+    justify-content: space-between;
+    width: 130px;
+    height: 30px;
+ }
+
+ .social {
+    width: 30px;
+    height: 30px;
+    
+ }
+
+ .img {
+    max-width: 100%;
+ }
+
+ .copyright {
+    color: white;
+    size: 12px;
+    margin-bottom: 39px;
+ }
+
