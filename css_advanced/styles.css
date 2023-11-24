@@ -37,10 +37,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 3.5vh;  
-    gap: 40%;
-    width: 100%
-    
+    gap: 900px;
+    margin-top: 28px;
 }
 
 .logo-container {
@@ -52,10 +50,9 @@
 .nav-menu {
     display: flex;
     width: auto;
-    height: 1.5vh;
     justify-content: space-between;
     align-items: center;
-    gap: 3.6%;
+    gap: 40px;
     }
 
 .nav-link {
@@ -87,9 +84,9 @@
     display: flex;
     justify-content: space-between;
     width: 40%;
-    font-weight: ;
+    font-weight: 700;
     font-size: 16px;
-    margin-top: -25px;
+    margin-top: -30px;
     margin-bottom: 3.8vh;
 }
 
@@ -102,6 +99,7 @@ button {
     text-decoration: none;
     color: #ffffff;
     border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .pros {
@@ -203,8 +201,8 @@ button {
     justify-content: space-between;
     width: 77.1%;
     height: 45vh;
-    border: 1px solid green;
     margin: auto;
+    border: 1px solid green;
 }
 
 .tutorial .popular {
@@ -214,6 +212,8 @@ button {
 .tutorial-videos {
     display: flex;
     gap: 2.7%;
+    
+    border: 1px solid green;
 }
 
 .tutorial-videos-box {
@@ -229,15 +229,15 @@ button {
 }
 
 .video-img {
-    width: 100%;
     position: absolute;
+    width: 70%;
     z-index: 1;
 }
 
-.tutorial-videos-box .play {
+.play {
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 30%;
     z-index: 2;
 }
 
@@ -338,7 +338,6 @@ button {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    border: 1px solid green;
     width: 64%;
     height: 70.5vh;
 }
@@ -365,7 +364,6 @@ button {
     font-size: 14px;
     color: #07162980;
     line-height: 1.5;
-    border: 1px solid green;
     margin
 }
 
@@ -398,7 +396,7 @@ button {
     display: flex;
     justify-content: space-between;
     width: auto;
-    height: 30px;
+    gap: 20px;
  }
 
  .social {
@@ -415,5 +413,6 @@ button {
     color: white;
     size: 12px;
     margin-bottom: 39px;
+    font-weight: 400;
  }
 

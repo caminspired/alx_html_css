@@ -18,133 +18,115 @@
       display: flex;
       flex-direction: column;
       width: 100%;
+      background-color: #F2F2F2;;
       
    }
 
-   .homepage {
+   .hero {
     display: flex;
     flex-direction: column;
     background-image: url(images/headphones_hero_1.jpg);
-    width: cover;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
     background-repeat: no-repeat;
     color: #ffffff;
-    height: 100vh;
     justify-content: space-between;
-    align-items: center;
-
+    background-position: center;
    }
 
-   .homepage .home-head {
+   .banner {
       display: flex;
       flex-direction: column;
-      justify-content: center;
+      justify-content: space-between;
+      color: #ffffff;
       align-items: center;
-      height: 60px;
-      border: 1px solid green;
+      width: 100%;
+      position: absolute;
+      top: 60%;
+      transform: translateY(-50%);
+      }
+
+   .banner-heading {
+      max-width: 800px;
+      margin: auto;
+     text-align: center;
+     padding: 50px 5px;
    }
 
-   .home-paragraph {
-      
-      justify-self: center;
-      border: 1px solid green;
-      height: 104px;
+   .banner-heading p {
+      margin-top: -2vh;
+      font-size: 16px;
+   }
+
+   .banner-paragraph {
+      text-align: center;
+      max-width: 800px;
+      padding: 40px 5px;
+      margin: auto;
    }
 
    .header {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-      width: 71.5%;
-      height: 32px;
+      margin-top: 2vh;
       margin-left: auto;
-      color: #ffffff;
-      position: absolute;
-      top: 28px;
-      left: auto;    
-   
-   }
-  
-   .home {
       display: flex;
-      flex-direction: column;
-      align-items: center;
       justify-content: space-between;
-      width: 637px;
-      height: 313px;
-      color: #ffffff;
-      border: 1px solid red;
-      margin-bottom: 115px;
-
-      }
-
-   /* .hamburger {
-      position: relative;
-      display: block;
-      width: 20px;
-      cursor:pointer;
-      appearance: none;
-      background: none;
-      outline: none;
-      border: none;
-   } */
-
-   /* .hamburger .bar, .hamburger:after, .hamburger:before {
-      content: "";
-      display: block;
-      width: 100%;
-      height: 2px;
-      background-color: #fff;
-      margin: 6px 0px;
-      transition: 0.4s;
-   }
-
-   .hamburger.is-active:before {
-      transform: rotate(-45deg) translate(-8px, 6px);
-   }
-
-   .hamburger.is-active .bar {
-      opacity: 0;
-   }
-
-   .hamburger.is-active:after {
-      transform: rotate(45deg) translate(-9px, -8px);
-
-   } */
-
-
-   .nav {
-      width: 100%;
-      height: auto;
+      width: 66%;
       position: fixed;
-      background-color: transparent;
+      z-index: 3;   
+   }
+
+   .header .nav-list {
+      clear: both;
+   }
+
+   .header .nav-list {
+      margin: 0;
+      padding: 0;
+      list-style: none;
       overflow: hidden;
-      margin-top: 50px;
-      text-align: center;
       max-height: 0;
       transition: max-height .5s ease-out;
    }
-
-   .nav-link {
+   
+   .nav-list a {
       text-decoration: none;
-      color: #ffffff;
+      color: white;
       display: block;
-      padding: 30px;
+      padding: 20px;
+      font-size: 14px;
+      font-weight: 600;
    }
 
-   .nav a:hover{
+   .nav-list a:hover{
       color: #FF6565;
-  }
-
-   .logo-container {
-    width: 16.1%;
-    height: 32px;
-    overflow: hidden;
    }
 
-   .logo-container img {
+   .header .hamburger-icon {
+      border: 1px solid red;
+      position: relative;
+   }
+
+   .header .hamburger-icon .nav-icon {
+      display: block;
+      height: 2px;
+      width: 20px;
+      position: relative;
+      transition: background .2s ease ease-out;
+   }
+
+   .header .hamburger-icon .nav-icon:before {
+      content: "";
+      display: block;
+      height: 100%;
       width: 100%;
-      height: auto;
+      position: absolute;
+   }
+
+   .logo {
+    max-width: 32px;
+    max-height: 32px;
+    float: left;
    }
 
    .button {
@@ -160,5 +142,6 @@
    }
 
    button:hover {
-      opacity: 0.9
+      opacity: 0.85;
   }
+
