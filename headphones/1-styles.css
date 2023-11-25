@@ -51,7 +51,7 @@
       max-width: 800px;
       margin: auto;
      text-align: center;
-     padding: 50px 5px;
+     padding: 50px 10px;
    }
 
    .banner-heading p {
@@ -62,18 +62,28 @@
    .banner-paragraph {
       text-align: center;
       max-width: 800px;
-      padding: 40px 5px;
+      padding: 40px 10px;
       margin: auto;
    }
 
    .header {
-      margin-top: 2vh;
-      margin-left: auto;
       display: flex;
-      justify-content: space-between;
-      width: 66%;
-      position: fixed;
-      z-index: 3;   
+      flex-direction: row-reverse;
+      width: 70%;
+   }
+
+   .header .logo-container {
+    width: 181px;
+    height: 32px;
+    align-self: center;
+    margin-left: ;
+
+   }
+
+   .logo {
+      width: 100%;
+      height: 100%;
+   
    }
 
    .header .nav-list {
@@ -103,45 +113,104 @@
    }
 
    .header .hamburger-icon {
-      border: 1px solid red;
-      position: relative;
+      position: fixed;
+      left: 20px;
+      top: 20px;
+      cursor: pointer;
+      visibility: visible;
    }
 
    .header .hamburger-icon .nav-icon {
       display: block;
       height: 2px;
-      width: 20px;
+      width: 13px;
       position: relative;
       transition: background .2s ease ease-out;
+      background: white;
+      visibility: visible;
    }
 
    .header .hamburger-icon .nav-icon:before {
       content: "";
       display: block;
       height: 100%;
-      width: 100%;
+      width: 153.8%;
       position: absolute;
+      transition: all .2s ease-out;
+      top: 5px;
+      background: white;
    }
 
-   .logo {
-    max-width: 32px;
-    max-height: 32px;
-    float: left;
+   .header .hamburger-icon .nav-icon:after {
+      content: "";
+      display: block;
+      height: 100%;
+      width: 153.8%;
+      position: absolute;
+      transition: all .2s ease-out;
+      top: -5px;
+      background: white;
+   }
+
+   .header .hamburger-button {
+      display: none;
+   }
+
+   .header .hamburger-button:checked ~ .nav-list {
+      max-height: 240px; 
+   }
+
+   .header .hamburger-button:checked ~ .hamburger-icon .nav-icon {
+      background: transparent;
+   }
+
+   .header .hamburger-button:checked ~ .hamburger-icon .nav-icon:before {
+      transform: rotate(-45deg);
+      top: 0;
+   }
+
+   .header .hamburger-button:checked ~ .hamburger-icon .nav-icon:after {
+      transform: rotate(45deg);
+      top: 0;
    }
 
    .button {
-    background-color: #FF6565;
-    width: 162px;
-    height: 44px;
-    border-radius: 22px;
-    text-decoration: none;
-    color: #ffffff;
-    border: none;
-    cursor: pointer;
-    box-shadow: 0px 2px 20px 0px #00000080;
+      background-color: #FF6565;
+      width: 162px;
+      height: 44px;
+      border-radius: 22px;
+      text-decoration: none;
+      color: #ffffff;
+      border: none;
+      cursor: pointer;
+      box-shadow: 0px 2px 20px 0px #00000080;
    }
 
    button:hover {
       opacity: 0.85;
   }
 
+  @media (min-width: 480px) {
+      .header {
+         display: flex;
+         flex-direction: row;
+         width: 70%;
+         justify-content: space-between;
+         margin: 5px auto;
+      }
+
+      .header .nav-list a {
+         padding: 10px 10px;
+      }
+
+      .header .nav-list {
+         clear: none;
+         float: right;
+         max-height: none;
+         display: flex;
+      }
+
+      .header .hamburger-icon {
+         display: none;
+      }
+  }
