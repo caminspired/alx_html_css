@@ -370,6 +370,7 @@
       font-weight: 400;
    }
 
+
   @media (min-width: 480px) {
       .header {
          display: flex;
@@ -403,6 +404,11 @@
          display: flex;
          flex-flow: row wrap;
          margin: 100px auto;
+      }
+
+      .services-box {
+         max-width: none;
+         margin-right: 20px;
       }
 
       .percentage {
@@ -469,6 +475,7 @@
          height: inherit;
          gap: 20px;
          max-width: 200px;
+         margin-right: 0;
       }
 
       .percentage {
@@ -489,7 +496,26 @@
          width: 90%;
       }
    }
+    /* Adding animations to "What we do..." section items */
+   
+    .what-we-do .services-box {
+      transition: transform 0.5s ease-in-out, opacity 0.3s ease-in-out;
+   }
 
+   .what-we-do .services-box:hover {
+      transform: scale(1.1) rotate(5deg);
+      opacity: 0.9;
+   }
+
+   /* Adding animations to "Our results" section items */
+   .our-results .percentage-box {
+      transition: transform 0.5s ease-in-out, opacity 0.3s ease-in-out;
+   }
+
+   .our-results .percentage-box:hover {
+      transform: scale(1.1) rotate(-5deg);
+      opacity: 0.9;
+   }
 
 
   
