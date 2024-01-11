@@ -13,6 +13,12 @@
       offset: none;
       text-indent: none;      
    }
+
+      /* Resetting browser defaults */
+   body, h1, h2, p, ul, li, button, input, textarea {
+      margin: 0;
+      padding: 0;
+   }
       
    .body {
       display: flex;
@@ -459,13 +465,7 @@
          margin: 70px auto 0;
       }
 
-      .services {
-         display: flex;
-         flex-flow: row wrap;
-         margin: 100px auto;
-         justify-content: center;
-         gap: 55px;
-      }
+
       
       .services-box {
          display: flex;
