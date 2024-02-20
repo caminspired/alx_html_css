@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FEEDBACK FORM</title>
+  </head>
+  <body>
+    <form action="/feedback_page" method="POST" id="select-feedback">
+      <ul>
+        <li>
+          <label for="name">Name</label>
+          <input type="text" id="name" name="user_name" required />
+        </li>
+        <li>
+          <label for="mail">Email</label>
+          <input type="email" id="mail" name="user_email" required />
+        </li>
+        <li>
+          <label for="file">Please upload a file</label>
+          <input type="file" id="plan" name="file" required />
+        </li>
+      </ul>
+      <fieldset>
+        <legend>What is your feedback on our services?</legend>
+        <ul>
+          <li>
+            <label for="excellent">Very Good</label>
+            <input
+              type="checkbox"
+              id="excellent"
+              name="feedback"
+              value="excellent"
+              checked
+            />
+          </li>
+          <li>
+            <label for="good">Good</label>
+            <input type="checkbox" id="good" name="feedback" value="good" />
+          </li>
+          <li>
+            <label for="average">Average</label>
+            <input
+              type="checkbox"
+              id="average"
+              name="feedback"
+              value="average"
+            />
+          </li>
+          <li>
+            <label for="bad">Bad</label>
+            <input type="checkbox" id="bad" name="feedback" value="bad" />
+          </li>
+          <li>
+            <label for="very-bad">Very Bad</label>
+            <input
+              type="checkbox"
+              id="very-bad"
+              name="feedback"
+              value="very-bad"
+            />
+          </li>
+        </ul>
+      </fieldset>
+      <button type="submit" id="button">Submit</button>
+    </form>
+    <script>
+      const selectFeedback = document.getElementById("select-feedback");
+
+      selectFeedback.addEventListener("submit", function (event) {
+        event.preventDefault();
+        validateCheckboxes();
+      });
+
+      function validateCheckboxes() {
+        let checkboxes = document.querySelectorAll(
+          "input[name='feedback']:checked"
+        );
+
+        if (checkboxes.length === 0) {
+          alert("Please select feedback");
+          return;
+        }
+
+        selectFeedback.submit();
+      }
+    </script>
+  </body>
+</html>

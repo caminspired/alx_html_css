@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SUBSCRIPTION FORM</title>
+  </head>
+  <body>
+    <form action="/subscription_page" method="POST" id="subscription-form">
+      <ul>
+        <li>
+          <label for="name">Name</label>
+          <input type="text" id="name" name="user_name" required />
+        </li>
+        <li>
+          <label for="mail">Email</label>
+          <input type="email" id="mail" name="user_email" required />
+        </li>
+      </ul>
+      <fieldset>
+        <legend>Choose your prefered subscription plan</legend>
+        <ul>
+          <li>
+            <label for="annually">Annually</label>
+            <input
+              type="radio"
+              id="annually"
+              name="subscription"
+              value="annually"
+              checked
+            />
+          </li>
+          <li>
+            <label for="monthly">Monthly</label>
+            <input
+              type="radio"
+              id="monthly"
+              name="subscription"
+              value="monthly"
+            />
+          </li>
+        </ul>
+      </fieldset>
+      <button type="submit" id="button">Subscribe</button>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>REGISTRATION FORM</title>
+  </head>
+  <body>
+    <form action="/registration_page" method="POST" id="registration-form">
+      <ul>
+        <li>
+          <label for="name">Name</label>
+          <input type="text" id="name" name="user_name" required />
+        </li>
+        <li>
+          <label for="mail">Email</label>
+          <input type="email" id="mail" name="user_email" required />
+        </li>
+        <li>
+          <label for="password">Password</label>
+          <input type="password" id="password" name="user_password" required />
+        </li>
+        <li>
+          <label for="password">Confrim Password</label>
+          <input
+            type="password"
+            id="confirm_password"
+            name="confirm_password"
+            required
+          />
+        </li>
+        <li>
+          <label for="msg">Description</label>
+          <textarea id="msg" name="user_description" required></textarea>
+        </li>
+      </ul>
+      <button type="submit" id="button">Submit</button>
+    </form>
+    <script>
+      const registrationForm = document.getElementById("registration-form");
+
+      registrationForm.addEventListener("submit", function (event) {
+        event.preventDefault();
+        matchPasswords();
+      });
+
+      function matchPasswords() {
+        const password = document.getElementById("password").value;
+        const confirmPassword =
+          document.getElementById("confirm_password").value;
+
+        if (confirmPassword !== password) {
+          alert("Passwords do not match");
+          return;
+        }
+
+        registrationForm.submit();
+      }
+    </script>
+  </body>
+</html>
